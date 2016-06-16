@@ -1,0 +1,17 @@
+name: mqtt-subscriber-dev
+version: 0.1
+summary: MQTT subscriber 
+description: MQTT subscriber example
+confinement: devmode 
+
+apps:
+  subscribe:
+    command: bin/subscribe
+    plugs: [network, network-bind]
+
+parts:
+  mqtt-subscriber:
+    plugin: copy
+    files:
+      subscribe.py: bin/subscribe
+    after: [mqtt-paho-py3]

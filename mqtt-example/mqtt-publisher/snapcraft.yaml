@@ -1,0 +1,17 @@
+name: mqtt-publisher-dev
+version: 0.1
+summary: MQTT publisher 
+description: MQTT publisher example
+confinement: devmode 
+
+apps:
+  publish:
+    command: bin/publish
+    plugs: [network, network-bind]
+
+parts:
+  mqtt-publisher:
+    plugin: copy
+    files:
+      publish.py: bin/publish
+    after: [mqtt-paho-py3]
