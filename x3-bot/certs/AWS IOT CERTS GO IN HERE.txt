@@ -1,0 +1,3 @@
+See this for help:
+
+https://blog.louisborsu.be/aws-iot-getting-started-tutorial-with-nodejs/ 

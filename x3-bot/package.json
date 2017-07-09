@@ -1,0 +1,24 @@
+{
+  "name": "x3-bot",
+  "version": "1.0.0",
+  "description": "X3 hackathon x3 bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ccheel@bitbucket.org/cswebdev/x3-bot.git"
+  },
+  "author": "Team Peleton",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/cswebdev/x3-bot#readme",
+  "dependencies": {
+    "aws-iot-device-sdk": "^1.0.12",
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "iphone-finder": "^1.0.1",
+    "request": "^2.72.0"
+  }
+}
